@@ -11,10 +11,17 @@ body {
     background-repeat: no-repeat;
 }
 header{
-    padding: ;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: min(1080px, 100%);
+    padding: 0 40px;
+    margin-top: 10px;
+    backdrop-filter: blur(3px);
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.089);
 }
 nav{
-    margin: 10px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,12 +31,18 @@ nav{
     display: flex;
 }
 .group-navbar li{
+    color: rgb(83, 83, 83);
     padding: 10px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
     transition: 300ms ease;
     cursor: pointer;
 }
 .group-navbar li:hover{
     padding: 7px 10px ;
-    border-bottom: 2px solid black;
+    color: rgb(23, 23, 23);
+    border-bottom: 1px solid black;
+}
+
+#Inicio{
+    height: 100vh;
 }
