@@ -1,113 +1,85 @@
-::-webkit-scrollbar-thumb
-{
-	background-color: #000000;
+body {
+    background: #181616;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-html {
-    padding: 0 10px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 200;
-}
-body{
-    margin: 0;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(231, 231, 231) 100%);
-
-}
-.container {
-    margin: auto;
-    width: min(1080px, 100%);
-}
-
-header{
-    position: absolute;
-    width: min(1080px, 100%);
-    padding: 0 40px;
-    backdrop-filter: blur(3px);
-    border-radius: 50px;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-/* 
- --Estilos que pueden servir para un scroll
-header{
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.301);
-    width: min(1080px, 100%);
-    padding: 0 40px;
-    margin-top: 10px;
-    backdrop-filter: blur(3px);
-    border-radius: 50px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08);
-} */
-
-nav{
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
+.header-container {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    height: 220px;
     align-items: center;
 }
 
-.group-navbar{
-    list-style: none;
-    display: flex;
+.container-text {
+    padding: 0 10px;
+    text-align: center;
+     
 }
 
-.group-navbar li{
-    color: rgb(83, 83, 83);
-    padding: 8px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
+.container-text * {
+    margin: 0;
+}
+.sub-t{
+    color: rgba(240, 248, 255, 0.5);
+ 
+}
+.biografia{
+    text-align: justify;
+    text-align-last: center;
+    font-size: 15px ;
+    width: min(330px,100%);
+    margin: 25px auto;
+    color: rgba(240, 248, 255, 0.8);
+}
+.user {
+    font-size: 170px;
+}
+.redes{
+    width: min(330px,100%);
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.redes button{
+    width: 50px;
+    height: 50px;
+    color: rgba(240, 248, 255, 0.8);
+    border-radius: 50%;
+    background: #181616;
+    box-shadow:  18px 18px 36px #0f0e0e,
+                 -18px -18px 36px #211e1e;
+    font-size: 20px;
+    border: none;
     transition: 300ms ease;
     cursor: pointer;
 }
-
-.group-navbar li:hover{
-    padding: 5px 8px ;
-    color: rgb(23, 23, 23);
-    border-bottom: 1px solid black;
+.redes button:hover{
+    width: 50px;
+    height: 50px;
+    color: rgba(240, 248, 255, 0.8);
+    border-radius: 50%;
+    background: #181616;
+    box-shadow: inset 18px 18px 36px #0f0e0e,
+                inset -18px -18px 36px #211e1e;
+    font-size: 20px;
+    border: none;
 }
-
-#Inicio{
-    height: 100vh;
-}
-.section-center{
-
-display:flex;
-flex-direction: column;
-justify-content: center;
-    text-align: center;
-}
-.section-columnas{
-    display:flex;
+.container-btn {
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap
 }
 
-.col-cont-left{
-    text-align: left;
-    width: 50%;
+.container-btn button {
+    flex: min(150px, 100%);
+    margin: 10px;
+    min-height: 150px;
+    border: 0;
+    border-radius: 11px;
+    background: #a10c0c;
+    box-shadow: inset 5px 5px 21px #860a0a,
+        inset -5px -5px 21px #bc0e0e;
 }
-.cont-right{
-    text-align: right;
-    width: 50%;
-}
-.text-titulo{
-    font-weight: 100;
-    font-size: 3rem;
-    margin: 10px 0;
-}
-.text-sub{
-    margin: 10px 0;
-    font-weight: 100;
-    font-size: 1.8rem;
-}
-.texto-resu{
-    width: min(420px,100%);
-}
-
-
-
-#background {
-    transition: 1s ease;
-  }
