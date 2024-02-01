@@ -99,13 +99,27 @@ body {
     cursor: pointer;
     transition: 300ms ease;
 }
+.share button:hover {
+    padding: 5px 20px;
+    border-radius: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
 
-.gmail {
+}
+.gmail{
     border-color: rgb(6, 92, 161) !important;
+   
 }
 
 .wsp {
     border-color: rgb(2, 124, 2) !important;
+}
+.wsp:hover{
+    background-color: #25d365c5;
+    
+}
+.gmail:hover{
+    background-color: rgb(6, 92, 161);
 }
 
 .instagram,
@@ -145,16 +159,7 @@ body {
     background: linear-gradient(#D3D3D3, #C0C0C0, #A9A9A9, #bebebe);
 }
 
-.share button:hover {
-    padding: 5px 20px;
-    border: 1px solid rgb(43, 160, 255);
-    ;
-    border-radius: 50px;
-    background-color: #1b1b1b;
-    color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
 
-}
 
 .figura * {
     background-color: rgba(0, 0, 0, 0.315);
@@ -163,7 +168,7 @@ body {
     position: absolute;
 }
 
-.cuadrado {
+/* .cuadrado {
     height: min(300px);
     width: min(500px, 100%);
     top: 0;
@@ -177,17 +182,13 @@ body {
     top: 300px;
     height: min(400px);
     border-radius: 0 0 50% 50%;
-}
+} */
 
 .container-btn-large {
     display: grid;
     width: min(350px, 100%);
     margin: auto;
-    gap: 12px;
     height: 200px;
-    overflow: scroll;
-    padding: 10px;
-    position: relative;
 }
 
 .container-btn-large::-webkit-scrollbar {
