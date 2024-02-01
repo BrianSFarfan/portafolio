@@ -1,3 +1,7 @@
+:root {
+    --tamañoBtnRedes: 50px;
+}
+
 body {
     background: #181616;
     color: aliceblue;
@@ -15,34 +19,39 @@ body {
 .container-text {
     padding: 0 10px;
     text-align: center;
-     
+
 }
 
 .container-text * {
     margin: 0;
 }
-.sub-t{
+
+.sub-t {
     color: rgba(240, 248, 255, 0.5);
- 
+
 }
-.biografia{
+
+.biografia {
     text-align: justify;
     text-align-last: center;
-    font-size: 15px ;
-    width: min(330px,100%);
+    font-size: 15px;
+    width: min(330px, 100%);
     margin: 25px auto;
     color: rgba(240, 248, 255, 0.8);
 }
+
 .user {
     font-size: 170px;
 }
-.redes{
-    width: min(330px,100%);
+
+.redes {
+    width: min(330px, 100%);
     margin: auto;
     display: flex;
     justify-content: space-around;
 }
-.redes button{
+
+/* .redes button{
     width: 50px;
     height: 50px;
     color: rgba(240, 248, 255, 0.8);
@@ -54,18 +63,19 @@ body {
     border: none;
     transition: 300ms ease;
     cursor: pointer;
-}
-.redes button:hover{
-    width: 50px;
-    height: 50px;
+} */
+.redes button {
+    width: var(--tamañoBtnRedes);
+    height: var(--tamañoBtnRedes);
+    ;
     color: rgba(240, 248, 255, 0.8);
     border-radius: 50%;
-    background: #181616;
-    box-shadow: inset 18px 18px 36px #0f0e0e,
-                inset -18px -18px 36px #211e1e;
     font-size: 20px;
+    cursor: pointer;
     border: none;
+    position: relative;
 }
+
 .container-btn {
     display: flex;
     justify-content: space-between;
@@ -73,13 +83,149 @@ body {
     flex-wrap: wrap
 }
 
-.container-btn button {
-    flex: min(150px, 100%);
-    margin: 10px;
-    min-height: 150px;
+.share {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px;
+}
+
+.share button {
+    padding: 5px 20px;
+    border: 1px solid;
+    border-radius: 50px;
+    background-color: #0f0e0e;
+    color: rgba(240, 248, 255, 0.8);
+    cursor: pointer;
+    transition: 300ms ease;
+}
+
+.gmail {
+    border-color: rgb(6, 92, 161) !important;
+}
+
+.wsp {
+    border-color: rgb(2, 124, 2) !important;
+}
+
+.instagram,
+.discord,
+.twitch,
+.twitter {
+    background-color: rgb(26, 25, 25);
+    box-shadow: inset 18px 18px 36px #0f0e0e,
+        inset -18px -18px 36px #211e1e;
+    height: calc(var(--tamañoBtnRedes) - 3px);
+    width: calc(var(--tamañoBtnRedes) - 3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cont-discord {
+    background: linear-gradient(#7289da, #2857ff);
+}
+
+.cont-instagram {
+    background: linear-gradient(to right, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+}
+
+.cont-twitch {
+    background: linear-gradient(#6441A5, #9146FF);
+    ;
+}
+
+.cont-twitter {
+    background: linear-gradient(#D3D3D3, #C0C0C0, #A9A9A9, #bebebe);
+}
+
+.share button:hover {
+    padding: 5px 20px;
+    border: 1px solid rgb(43, 160, 255);
+    ;
+    border-radius: 50px;
+    background-color: #1b1b1b;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+
+}
+
+.figura * {
+    background-color: rgba(0, 0, 0, 0.315);
+    z-index: -1;
+    width: min(500px, 100%);
+    position: absolute;
+}
+
+.cuadrado {
+    height: min(300px);
+    width: min(500px, 100%);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.circulo {
+    left: 50%;
+    transform: translate(-50%);
+    top: 300px;
+    height: min(400px);
+    border-radius: 0 0 50% 50%;
+}
+
+.container-btn-large {
+    display: grid;
+    width: min(350px, 100%);
+    margin: auto;
+    gap: 12px;
+    height: 200px;
+    overflow: scroll;
+    padding: 10px;
+    position: relative;
+}
+
+.container-btn-large::-webkit-scrollbar {
+    background-color: rgba(41, 41, 41, 0.658);
+    border-radius: 50px;
+    height: 0px;
+    width: 5px;
+}
+
+.container-btn-large::-webkit-scrollbar-thumb {
+    background-color: rgb(63, 63, 63);
+    border-radius: 50px;
+}
+
+
+.container-btn-large button {
     border: 0;
-    border-radius: 11px;
-    background: #a10c0c;
-    box-shadow: inset 5px 5px 21px #860a0a,
-        inset -5px -5px 21px #bc0e0e;
+    background-color: #252525;
+    height: 50px;
+    border-radius: 20px;
+    color: #D3D3D3;
+    text-align: left;
+    padding: 10px 20px;
+    transition: 300ms ease;
+    display: flex;
+    align-items: center;
+    transition: 300ms ease;
+}
+
+.container-btn-large button:hover {
+    background-color: #1b1b1b;
+    color: aliceblue;
+    text-align: left;
+    padding: 10px 25px;
+}
+
+.container-btn-large button i {
+    font-size: 23px;
+    margin-right: 15px;
+    color: #1ed760;
 }
