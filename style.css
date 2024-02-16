@@ -27,7 +27,7 @@ body {
 }
 
 .sub-t {
-    color: rgba(240, 248, 255, 0.5);
+    color: rgba(240, 248, 255, 0.342);
 
 }
 
@@ -37,7 +37,7 @@ body {
     font-size: 15px;
     width: min(330px, 100%);
     margin: 25px auto;
-    color: rgba(240, 248, 255, 0.8);
+    color: rgba(240, 248, 255, 0.603);
 }
 
 .user {
